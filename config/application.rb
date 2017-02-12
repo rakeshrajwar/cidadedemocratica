@@ -49,7 +49,7 @@ module Cidadedemocratica
     # Enable escaping HTML in JSON.
     config.active_support.escape_html_entities_in_json = true
 
-    # config.assets.initialize_on_precompile = false
+    config.assets.initialize_on_precompile = false
     # FIXME: hardcoding missing assets, must find a better way, but works for now
     config.assets.precompile += %w(
       active_admin.css
