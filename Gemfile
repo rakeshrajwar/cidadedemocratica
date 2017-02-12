@@ -51,6 +51,7 @@ gem 'yajl-ruby', :platforms => [:ruby_19]
 gem 'whenever', :require => false
 gem 'will_paginate'
 gem 'rails_12factor'
+gem 'test-unit'
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
