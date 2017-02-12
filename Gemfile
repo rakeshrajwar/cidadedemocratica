@@ -28,7 +28,6 @@ gem 'memcache-client'
 gem 'meta-tags', :require => 'meta_tags'
 gem 'mini_magick', '~> 3.5.0'
 gem 'multi_json'
-gem 'mysql2', '~> 0.3.11'
 gem 'ncri_attachment_fu', :require => 'attachment_fu'
 gem 'nested_form'
 gem 'omniauth'
@@ -50,7 +49,7 @@ gem 'virtus'
 gem 'yajl-ruby', :platforms => [:ruby_19]
 gem 'whenever', :require => false
 gem 'will_paginate'
-
+gem 'rails_12factor'
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
@@ -73,6 +72,8 @@ end
 
 group :production do
   gem 'newrelic_rpm', '~> 3.5.8.72'
+  gem 'pg' # Added postgres and made it production only.
+
 end
 
 group :development do
@@ -80,7 +81,7 @@ group :development do
   gem 'fuubar'
   gem 'pry-rails'
   gem 'thin'
-
+  gem 'mysql2', '~> 0.3.11' # Added development group.
   gem "bullet", "~> 4.5.0"
 
   gem 'better_errors'

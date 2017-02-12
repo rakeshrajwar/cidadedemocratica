@@ -280,6 +280,7 @@ GEM
       oauth2 (~> 0.8.0)
       omniauth (~> 1.0)
     orm_adapter (0.4.0)
+    pg (0.19.0)
     poltergeist (1.1.0)
       capybara (~> 2.0, >= 2.0.1)
       faye-websocket (~> 0.4, >= 0.4.4)
@@ -317,8 +318,13 @@ GEM
       bundler (~> 1.0)
       railties (= 3.2.19)
     rails-settings (1.0.0)
+    rails_12factor (0.0.3)
+      rails_serve_static_assets
+      rails_stdout_logging
     rails_autolink (1.0.9)
       rails (~> 3.1)
+    rails_serve_static_assets (0.0.5)
+    rails_stdout_logging (0.0.5)
     railties (3.2.19)
       actionpack (= 3.2.19)
       activesupport (= 3.2.19)
@@ -500,6 +506,7 @@ DEPENDENCIES
   newrelic_rpm (~> 3.5.8.72)
   omniauth
   omniauth-facebook
+  pg
   poltergeist
   prototype-rails
   prototype_legacy_helper (= 0.0.0)!
@@ -508,6 +515,7 @@ DEPENDENCIES
   rabl
   rails (= 3.2.19)
   rails-settings
+  rails_12factor
   rails_autolink
   rb-fsevent
   recaptcha!
@@ -530,3 +538,6 @@ DEPENDENCIES
   whenever
   will_paginate
   yajl-ruby
+
+BUNDLED WITH
+   1.14.3
