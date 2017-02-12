@@ -1,4 +1,5 @@
 source 'http://rubygems.org'
+ruby "2.3.1"
 
 gem 'rails', '3.2.19'
 
@@ -23,7 +24,7 @@ gem 'in_place_editing'
 gem 'inherited_resources'
 gem 'jquery-rails'
 gem 'jquery-ui-rails'
-gem 'json', '1.7.7', :platforms => [:ruby_18]
+gem 'json'#, '1.7.7', :platforms => [:ruby_18]
 gem 'memcache-client'
 gem 'meta-tags', :require => 'meta_tags'
 gem 'mini_magick', '~> 3.5.0'
